@@ -29,7 +29,7 @@ Data menunjukkan inefisiensi sistemik. Pada tahun 2022, volume penerbangan masih
 ### 2. Root Cause: Internal Failure
 Banyak yang menyalahkan cuaca, namun data berkata lain. Delay akibat cuaca (Garis Biru) cenderung stabil, sedangkan **Carrier Delay** (Garis Merah) naik tajam. Masalah utama ada pada manajemen internal maskapai.
 
-<img width="1137" height="642" alt="Screenshot 2025-11-28 105303" src="https://github.com/user-attachments/assets/7da9da4e-6b58-4200-a6e4-7d418da1ac83" />
+<img width="727" height="347" alt="image" src="https://github.com/user-attachments/assets/7b8e9540-9806-4e30-8b4e-51d345477388" />
 
 ### 3. "Summer Chaos" 2022
 Heatmap menunjukkan bahwa musim panas 2022 (Baris bawah, Juni-Juli) memiliki intensitas delay yang jauh lebih parah ("Merah Pekat") dibandingkan periode yang sama sebelum pandemi.
