@@ -34,12 +34,12 @@ Banyak yang menyalahkan cuaca, namun data berkata lain. Delay akibat cuaca (Gari
 ### 3. "Summer Chaos" 2022
 Heatmap menunjukkan bahwa musim panas 2022 (Baris bawah, Juni-Juli) memiliki intensitas delay yang jauh lebih parah ("Merah Pekat") dibandingkan periode yang sama sebelum pandemi.
 
-<img width="1107" height="626" alt="Screenshot 2025-11-28 105411" src="https://github.com/user-attachments/assets/85c32a0e-34a6-4d76-ac56-09149cce0888" />
+<img width="696" height="307" alt="image" src="https://github.com/user-attachments/assets/8393ea53-4bb1-4ec7-b782-8d6539fc622f" />
 
 ### 4. Airline Efficiency Gap
 Dampak pandemi tidak merata. Grafik ini menyoroti maskapai yang mengalami penurunan efisiensi paling signifikan (batang memanjang ke kanan) di tahun 2022 dibandingkan kinerja mereka sendiri di 2019.
 
-<img width="1112" height="528" alt="Screenshot 2025-11-28 105436" src="https://github.com/user-attachments/assets/69bd030b-5df7-42be-bbd2-5fee5d92c8e1" />
+<img width="728" height="307" alt="image" src="https://github.com/user-attachments/assets/a6aa209d-c0a8-459d-8847-19b58e69f221" />
 
 ---
 
