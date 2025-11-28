@@ -1,70 +1,59 @@
 # ✈️ Analisis Dampak Pandemi Terhadap Kinerja Operasional Penerbangan AS
 
-![Dashboard Preview](<img width="1599" height="740" alt="Dashboard Analisis" src="https://github.com/user-attachments/assets/d445e51f-ffce-4f36-8f5b-bdb2644c156a" />)
-> *Tampilan Penuh Dashboard Analisis (Klik link di bawah untuk versi interaktif)*
+**Status:** Completed  
+**Tools:** Tableau Public, Microsoft Excel  
+**Role:** Data Analyst
 
-## 🔗 [LIHAT DASHBOARD INTERAKTIF (TABLEAU PUBLIC)](MASUKKAN_LINK_TABLEAU_PUBLIC_KAMU_DISINI)
+## 📌 Business Understanding (Latar Belakang)
+Pasca-pandemi COVID-19, industri penerbangan AS mengalami fase pemulihan (*recovery*). Namun, berdasarkan data operasional 2021-2022, ditemukan fenomena anomali dimana **tingkat keterlambatan (*delay*) melonjak drastis** justru saat volume penerbangan belum pulih 100% ke level normal (2019).
 
----
+Proyek ini bertujuan untuk menginvestigasi fenomena **"Operational Rust"** (Ketidaksiapan Operasional) tersebut dan mencari akar penyebab inefisiensi maskapai.
 
-## 📌 Executive Summary
-Industri penerbangan Amerika Serikat mengalami guncangan hebat akibat pandemi COVID-19. Setelah masa hening di tahun 2020, industri mulai bangkit pada 2021-2022 (*Revenge Travel*). Namun, data menunjukkan adanya anomali serius: **Tingkat keterlambatan (Delay Rate) justru melonjak melebihi era sebelum pandemi, meskipun volume penerbangan belum pulih sepenuhnya.**
-
-Proyek ini menganalisis fenomena **"Operational Rust"** (Ketidaksiapan Operasional)—di mana maskapai kesulitan menangani lonjakan permintaan pasca-tidur panjang pandemi.
-
----
-
-## 🔍 Temuan Utama Berbasis Data (Key Insights)
-
-Analisis ini menggunakan data penerbangan tahun 2017-2022 untuk membuktikan 4 hipotesis utama:
-
-### 1. Paradoks Pemulihan: Volume Belum Pulih, Delay Meroket
-Terdapat inefisiensi sistemik yang nyata. Pada tahun 2022, volume penerbangan (batang abu-abu) masih berada di bawah level tahun 2019. Namun ironisnya, garis merah (**Delay Rate**) justru melonjak tajam menembus angka **21%**, lebih tinggi dibandingkan saat lalu lintas udara padat di 2019 (18%).
-
-![Inefficiency Chart](<img width="310" height="321" alt="image" src="https://github.com/user-attachments/assets/1f8ba0c4-4ced-4cd8-a90a-47766b897a1e" />)
-
-### 2. Akar Masalah: Kegagalan Internal Maskapai (Bukan Cuaca)
-Banyak spekulasi bahwa keterlambatan disebabkan oleh cuaca ekstrem. Namun, grafik di bawah membantah hal tersebut.
-* **Garis Biru (Weather Delay):** Cenderung stabil dan landai.
-* **Garis Merah (Carrier Delay):** Mengalami lonjakan drastis pada fase pemulihan (2021-2022).
-Ini membuktikan bahwa penyebab utama kekacauan adalah faktor internal maskapai (kekurangan kru, masalah teknis, atau manajemen armada).
-
-![Root Cause Chart](<img width="569" height="321" alt="image" src="https://github.com/user-attachments/assets/0c727822-1523-4872-be9e-841841c9ce26" />)
-
-### 3. "Summer Chaos": Musim Panas 2022 Lebih Buruk dari 2019
-Heatmap di bawah memvisualisasikan intensitas keterlambatan. Perhatikan baris tahun 2022 (paling bawah) pada bulan **Juni-Juli** yang berwarna merah pekat. Hal ini menunjukkan bahwa musim panas pasca-pandemi memiliki intensitas delay yang jauh lebih parah dibandingkan periode yang sama sebelum pandemi.
-
-![Seasonal Heatmap](<img width="1107" height="626" alt="image" src="https://github.com/user-attachments/assets/180105d6-0084-4643-8230-0920914f9f3a" />)
-
-### 4. Disparitas Efisiensi Maskapai
-Dampak pandemi tidak merata. Grafik ini memperlihatkan maskapai mana yang paling gagal beradaptasi. Batang yang memanjang ke kanan menunjukkan maskapai dengan rata-rata menit keterlambatan internal (*Carrier Delay per Flight*) tertinggi di tahun 2022.
-
-![Airlines Performance](<img width="1112" height="528" alt="Screenshot 2025-11-28 105436" src="https://github.com/user-attachments/assets/c479bd6c-c2c0-4eff-a815-d0eee3c144da" />)
+**Tujuan:**
+1. Memvalidasi apakah industri benar-benar sudah pulih atau mengalami kemunduran efisiensi.
+2. Mengidentifikasi akar masalah: Apakah faktor Eksternal (*Cuaca*) atau Internal (*Maskapai*) yang dominan.
+3. Menentukan maskapai dan periode waktu dengan kinerja terburuk untuk mitigasi risiko.
 
 ---
 
-## 🛠️ Metodologi & Tools
+## 🔍 Key Insights (Temuan Utama)
+Melalui analisis data historis (2017-2022), ditemukan 4 fakta krusial:
 
-### Tools yang Digunakan
-* **Tableau Desktop:** Untuk visualisasi data interaktif & dashboard layouting.
-* **Excel:** Untuk pembersihan data (*Data Cleaning*) dan preparation.
+### 1. The Recovery Paradox
+Data menunjukkan inefisiensi sistemik. Pada tahun 2022, volume penerbangan masih di bawah tahun 2019, namun **Delay Rate** (Garis Merah) justru meroket hingga **21%**.
 
-### Teknik Analisis
-1.  **Calculated Fields:** Pembuatan metrik kustom seperti `Delay Rate (%)`, `Cancellation Rate (%)`, dan `Avg Carrier Delay (Min/Flight)`.
-2.  **Grouping Analysis:** Segmentasi data menjadi 3 fase: *Pre-Pandemic* (<=2019), *Pandemic* (2020), dan *Recovery Phase* (>2020).
-3.  **Time-Series & Dual Axis:** Membandingkan tren volume dan kualitas layanan dalam satu kerangka waktu.
+<img width="619" height="642" alt="Insight 1" src="https://github.com/user-attachments/assets/28c296e5-e71f-4536-ab62-0701c2af265c" />
+> *Terlihat pola divergensi: Volume (Bar) belum pulih, tapi Delay (Garis) sudah 'overheat'.*
+
+### 2. Root Cause: Internal Failure
+Banyak yang menyalahkan cuaca, namun data berkata lain. Delay akibat cuaca (Garis Biru) cenderung stabil, sedangkan **Carrier Delay** (Garis Merah) naik tajam. Masalah utama ada pada manajemen internal maskapai.
+
+<img width="1137" height="642" alt="Screenshot 2025-11-28 105303" src="https://github.com/user-attachments/assets/7da9da4e-6b58-4200-a6e4-7d418da1ac83" />
+
+### 3. "Summer Chaos" 2022
+Heatmap menunjukkan bahwa musim panas 2022 (Baris bawah, Juni-Juli) memiliki intensitas delay yang jauh lebih parah ("Merah Pekat") dibandingkan periode yang sama sebelum pandemi.
+
+<img width="1107" height="626" alt="Screenshot 2025-11-28 105411" src="https://github.com/user-attachments/assets/85c32a0e-34a6-4d76-ac56-09149cce0888" />
+
+### 4. Airline Efficiency Gap
+Dampak pandemi tidak merata. Grafik ini menyoroti maskapai yang mengalami penurunan efisiensi paling signifikan (batang memanjang ke kanan) di tahun 2022 dibandingkan kinerja mereka sendiri di 2019.
+
+<img width="1112" height="528" alt="Screenshot 2025-11-28 105436" src="https://github.com/user-attachments/assets/69bd030b-5df7-42be-bbd2-5fee5d92c8e1" />
 
 ---
 
-## 📂 Struktur Repository
-* `Airline_Analysis.twbx`: File Tableau Packaged Workbook (Mengandung data & visualisasi lengkap).
-* `Airplane_DataPreparation.xlsx` : File excel yang sudah di cleaning & preparation.
-* `Airline_Delay_Cause.csv`: Dataset mentah yang digunakan untuk analisis.
-* `Dashboard Analisis.png`: Hasil dashboard analisis.
+## 📂 File Structure
+- `Airline_Analysis.twbx`: File Tableau Packaged Workbook berisi dashboard interaktif lengkap.
+- `Airplane_DataPreparation.xlsx ` : File hasil data cleaning & preparation.
+- `Airline_Delay_Cause.csv`: Dataset mentah yang digunakan (sumber: US Dept. of Transportation).
+- `Dashboard Analisis.png` : Dashboard hasil analisis. 
 
 ---
 
-### 📬 Kontak & Diskusi
-Terima kasih telah melihat portofolio analisis data ini. Jika Anda memiliki pertanyaan atau masukan mengenai analisis ini, silakan hubungi saya.
+## 💡 Rekomendasi Bisnis
+1.  **Workforce Restructuring:** Maskapai harus memprioritaskan rekrutmen kru dan teknisi untuk menurunkan *Carrier Delay*, bukan hanya menambah armada pesawat.
+2.  **Seasonal Buffer:** Menambahkan buffer waktu (jeda antar penerbangan) khusus di bulan **Juni & Juli** untuk mengantisipasi pola *Summer Chaos*.
+3.  **Audit Operasional:** Maskapai dengan *Efficiency Gap* tertinggi (seperti di Insight 4) perlu melakukan audit sistem manajemen antrian bandara.
 
-**Author:** [Nama Kamu]
+### 📬 Connect with me
+Jika Anda memiliki pertanyaan tentang analisis ini atau ingin berdiskusi, mari terhubung di [LinkedIn Saya](https://www.linkedin.com/in/muiz-isman)
