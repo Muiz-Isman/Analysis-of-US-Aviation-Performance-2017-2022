@@ -22,7 +22,7 @@ Melalui analisis data historis (2017-2022), ditemukan 4 fakta krusial:
 ### 1. The Recovery Paradox
 Data menunjukkan inefisiensi sistemik. Pada tahun 2022, volume penerbangan masih di bawah tahun 2019, namun **Delay Rate** (Garis Merah) justru meroket hingga **21%**.
 
-<img width="619" height="642" alt="Insight 1" src="https://github.com/user-attachments/assets/28c296e5-e71f-4536-ab62-0701c2af265c" />'
+<img width="720" height="359" alt="image" src="https://github.com/user-attachments/assets/aa471072-8cd3-47af-99f1-60a3b21490ef" />
 
 > *Terlihat pola divergensi: Volume (Bar) belum pulih, tapi Delay (Garis) sudah 'overheat'.*
 
