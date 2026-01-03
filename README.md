@@ -3,6 +3,7 @@
 **Status:** Completed  
 **Tools:** Tableau Public, Microsoft Excel  
 **Role:** Data Analyst
+**Link Dashboard Tableau:** https://public.tableau.com/app/profile/muiz.isman/viz/AnalisisDampakPandemiTerhadapKinerjaOperasionalPenerbanganAS/AnalisisDampakPandemiterhadapKinerjaOperasionalPenerbanganAS?publish=yes
 
 ## 📌 Business Understanding (Latar Belakang)
 Pasca-pandemi COVID-19, industri penerbangan AS mengalami fase pemulihan (*recovery*). Namun, berdasarkan data operasional 2021-2022, ditemukan fenomena anomali dimana **tingkat keterlambatan (*delay*) melonjak drastis** justru saat volume penerbangan belum pulih 100% ke level normal (2019).
